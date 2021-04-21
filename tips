@@ -1,0 +1,13 @@
+yarn init -y
+yarn add express
+yarn add -D typescript
+yarn tsc --init   Linhas: 28, 
+yarn add -D ts-node-dev
+
+
+
+
+-------------
+
+patch alteração de info especifica
+PUT alteração de diferentes infos   
