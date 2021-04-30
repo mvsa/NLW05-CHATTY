@@ -4,9 +4,14 @@ yarn add -D typescript
 yarn tsc --init   Linhas: 28, 
 yarn add -D ts-node-dev
 
+yarn add typeorm
+yarn add reflect-metadata
+yarn add sqlite3
 
+yarn typeorm migration:create -n CreateSettings 
+yarn typeorm migration:run
 
-
+yarn add uuid
 -------------
 
 patch alteração de info especifica
