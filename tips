@@ -11,9 +11,15 @@ yarn add sqlite3
 yarn typeorm migration:create -n CreateSettings 
 yarn typeorm migration:create -n CreateUsers
 yarn typeorm migration:create -n CreateMessages
+yarn typeorm migration:create -n CreateConnections
 yarn typeorm migration:run
 
 yarn add uuid
+
+yarn add socket.io
+yarn add ejs
+yarn add socket.io-client
+
 
 
 -------------
@@ -24,3 +30,16 @@ PUT alteração de diferentes infos
 ManyToOne
 Many = para referenciar a entidade que estou trabalahndo
 One = vai referenciar a outra que irei fazer relação
+
+
+------------------------------------------------------------
+WebSocket:
+Diferentemente do tipo de conexão do protocolo http (cliente x servidor)
+em que a cada requisição a conexão é aberta e após a resposta ela é fechada.
+
+no ws a conexão só é perdida quando o cliente se desconecte,
+sendo possivel o servidor enviar resposta sem uma requisição (por exemplo) (comunicação bidirecional)
+Pois essa conexão se mantem aberta
+A conexão gera um id do socket, que pode ser referenciada
+
+socket.io (uma das bibliotecas que podem ser usadas ao se trabalhar com ws)
