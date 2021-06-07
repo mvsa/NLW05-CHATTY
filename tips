@@ -43,3 +43,5 @@ Pois essa conexão se mantem aberta
 A conexão gera um id do socket, que pode ser referenciada
 
 socket.io (uma das bibliotecas que podem ser usadas ao se trabalhar com ws)
+
+Com mustache consigo repassar variaveis js para um template previamente criado (estou usando via cdn no client.html)
